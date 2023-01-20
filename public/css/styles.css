@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color:#666;
+}
+
+p {
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+main {
+  background-color: #ebebeb;
+  padding: 20px 0px;
+}
+
+footer {
+  padding: 20px 0px;
 }
 
 /*Estilos del header*/
@@ -48,7 +68,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #0044AA; 
+  background-color: #03264C; 
   overflow-x: hidden; 
   padding-top: 60px; 
   transition: 0.5s; 
@@ -79,7 +99,7 @@ body {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #0044AA;
+  background-color: #03264C;
   color: white;
   padding: 5px 10px;
   margin-top: 5px;;
@@ -96,4 +116,64 @@ body {
 /*Estilos del Banner*/
 #banner {
   width: 100%;
+}
+
+/* Estilo de Productos */
+.productos {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+}
+.productos img {
+  width: 80%;
+  margin: 0px auto;
+  display: block;
+}
+
+.productos .precio {
+  margin-left: 30px;
+  display: inline;
+  font-size: 18px;
+}
+
+.productos .descuento {
+  margin-left: 30px;
+  display: inline;
+  font-size: 16px;
+  color: #39b54a;
+}
+
+.productos .nombre {
+  margin-left: 30px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Pie de Página */
+footer {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer .icono {
+  color:#03264C;
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+footer .subtitulo {
+  margin: 0px;
+}
+
+footer .descripcion {
+  margin-top:0px;
+  padding: 0px 20px;
+}
+
+footer .copyright {
+  text-align: left;
+  margin-top: 30px;
 }
