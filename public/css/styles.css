@@ -130,6 +130,7 @@ footer {
   background-color: white;
   margin: 10px 20px 0px 20px;
   padding: 15px;
+  width: 100%;
 }
 .productos img {
   width: 80%;
@@ -144,7 +145,7 @@ footer {
 }
 
 .productos .descuento {
-  margin-left: 30px;
+  margin-left: 10px;
   display: inline;
   font-size: 16px;
   color: #39b54a;
@@ -163,16 +164,20 @@ footer {
 }
 
 .circulo {
-  margin-left:30px;
+  margin-left:auto;
   border: 1px solid #39b54a;
-  border-radius: 100px;
-  display: inline-block;
-  width: 40px;
-  box-sizing: border-box;
-  color: #39b54a; 
+  border-radius: 50%;
+  color: #39b54a;
+  margin-top: -40px;
+  height: 40px;
+  background-color: white;
 }
 
-.circulo .fa-truck {
+.infoproducto i {
+  padding:10px;
+}
+
+.infoproducto .fa-truck {
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -210,4 +215,18 @@ main {
   width:90%;
   display:block;
   margin:0px auto;
+}
+
+.precio_descuento {
+  margin-top:20px;
+  display:flex;
+}
+
+.seccion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
 }

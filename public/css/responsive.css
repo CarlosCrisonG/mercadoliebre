@@ -1,12 +1,18 @@
+/*Smartphones*/
 @media (min-width: 361px) {
-    .productos {
-        /*display: inline-block;*/
-      }
+    
 }
 
+/*Tablets*/
 @media (min-width: 769px) {
-    .productos {
-        display: inline-block;
-        width: 20%;
-      }
+  .seccion article {
+    width: 40%;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  .seccion article {
+    width: 20%;
+  }
 }
