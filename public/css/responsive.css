@@ -1,0 +1,12 @@
+@media (min-width: 361px) {
+    .productos {
+        /*display: inline-block;*/
+      }
+}
+
+@media (min-width: 769px) {
+    .productos {
+        display: inline-block;
+        width: 20%;
+      }
+}
