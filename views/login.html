@@ -17,12 +17,12 @@
     <!-- Contenido de REGISTER - Inicio -->
     <main>
         <h1 style="text-align: center;">Login de Usuario</h1>
-        <form class="login-form" action="/create-user" method="POST">
+        <form class="login-form" action="/">
             <div class="control-formulario">
-                <input type="text" name="nombre" id="nombre" class="control" placeholder="Nombre y apellido:">
+                <input type="text" name="usuario" id="usuario" class="control" placeholder="Nombre de Usuario" minlength="3" errormessage="Por favor, escriba un usuario válido" required>
             </div>
             <div class="control-formulario">
-                <input type="text" name="usuario" id="usuario" class="control" placeholder="Nombre de usuari@:">
+                <input type="password" name="password" id="password" class="control" placeholder="Escribe tu contraseña" minlength="3" required>
             </div>
             <button type="submit" id="boton-login" class="boton-formulario">Enviar</button>
         </form>
