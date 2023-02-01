@@ -18,3 +18,28 @@ app.listen(3000, () =>
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"));
 });
+
+//Creamos la ruta para el footer.html
+app.get('/footer', (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/footer.html"));
+});
+
+//Creamos la ruta para el header.html
+app.get('/header', (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/header.html"));
+});
+
+//Creamos la ruta para el crear_producto.html
+app.get('/crear-producto', (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/crear_producto.html"));
+});
+
+//Creamos la ruta para el register.html
+app.get('/register', (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/register.html"));
+});
+
+//Creamos la ruta para el login.html
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/login.html"));
+});

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <title>Mercado Liebre</title>
+</head>
+<body>
+    <!--HEADER cargado desde header.html-->
+    <div w3-include-html="/header"></div>
+
+    <!-- Contenido de FORMULARIO - Inicio -->
+    <main>
+        <form action="/crear-producto" method="POST" class="create-form">
+            <div class="control-formulario">
+                <label>Nombre del producto:</label>
+                <input type="text" name="nombre" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Precio:</label>
+                <input type="text" name="precio" placeholder="123.56" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Categoria:</label>
+                <select name="categoria" class="control">
+                    <option value="hogar">Hogar</option>
+                    <option value="electro">Electro</option>
+                    <option value="indumentaria">Indumentaria</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label>Ciudad:</label>
+                <select name="ciudad" class="control">
+                    <option value="baires">Buenos Aires</option>
+                    <option value="rod">Rosario</option>
+                    <option value="mdz">Mendoza</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label>Descripción del producto:</label>
+                <textarea name="descripcion" class="control"></textarea>
+            </div>
+            <div class="control-formulario">
+                <label>Está en oferta:</label>
+                <input type="radio" name="enOferta">
+            </div>
+            <button type="reset" id="boton-borrar" class="boton-formulario">Borrar</button>
+            <button type="submit" id="boton-enviar" class="boton-formulario">Enviar</button>
+        </form>
+    </main>
+    <!-- Contenido de FORMULARIO - Fin -->
+
+    <!--FOOTER cargado desde footer.html-->
+    <div w3-include-html="/footer"></div>
+    
+    
+
+    <script src="/js/nav_script.js"></script>
+    <script src="/js/include.js"></script>
+    <script>includeHTML();</script>
+</body>
+</html>

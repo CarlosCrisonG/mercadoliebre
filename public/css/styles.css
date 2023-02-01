@@ -32,34 +32,45 @@ footer {
 /*Estilos del header*/
 .header {
   background-color:#EAC926;
-  padding:10px;
+  padding:20px 10px;
+}
+
+.header .primeraLinea {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilos de la barra de búsqueda */
 #busqueda {
-  width: 40%;
+  width: 40vw;
   float: right;
   padding: 6px;
   border: none;
-  margin-top: 3px;
-  margin-right: 5px;
+  margin: 0vw 2vw;
   font-size: 17px;
   border-radius: 5px;
 }
 
+.boton-buscar {
+  display: none;
+}
+
 /* Estilos del logo */
 #logo {
-  display: inline;
-  width:40%;
+  width:40vw;
+  margin: 0vw 2vw;
 }
 
 /* Estilos Label Header */
-#label {
-  font-size: 0.7em;
+#mensajeHeader {
+  font-size: 0.8em;
   font-family: Arial, Helvetica, sans-serif;
-  display: block;
-  margin: 10px 0px;
+  margin: 2vh 0px;
   text-align: center;
+  width: 100vw;
 }
 
 .fa-hand-holding-usd {
@@ -119,10 +130,14 @@ footer {
   background-color: #444;
 }
 
+/*Estilos Menu Desktop*/
+.menu-desktop {
+  display:none;
+}
+
 /*Estilos del Banner*/
 #banner {
   width: 100%;
-  margin-top: -20px;
 }
 
 /* Estilo de Productos */
@@ -206,7 +221,7 @@ footer .descripcion {
 }
 
 footer .copyright {
-  text-align: left;
+  text-align: center;
   margin-top: 30px;
 }
 
@@ -230,3 +245,96 @@ main {
   flex-direction: row;
   align-content: center;
 }
+
+/* Estilos para register.html - Inicio */
+.create-form {
+  padding:20px 15px;
+  
+}
+
+.control-formulario {
+  margin-bottom: 15px;
+}
+
+.control-formulario label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
+  font-size: 1.2em;
+}
+
+.control {
+  width: 100%;
+  padding: 8px;
+  border:none;
+  font-size: 1.2em;
+}
+
+.boton-formulario {
+  border:none;
+  font-size: 20px;
+  color:white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#fechaNacimiento {
+  font-size:20px;
+}
+
+#encabezado {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.radios {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.checkboxes {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkboxes label, 
+.checkbox {
+  margin-left: 20px;
+}
+
+#boton-borrar {
+  background-color: #666;
+}
+
+#boton-enviar {
+  background-color: #03264C;
+}
+/* Estilos para register.html - Fin */
+
+/*Estilos para login.html - Inicio*/
+.login-form {
+  padding:20px 15px;
+}
+
+.login-form .control {
+  width: 70%;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#boton-login {
+  background-color: #03264C;
+  width: 70%;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0px;
+}
+/*Estilos para login.html - Fin*/

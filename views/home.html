@@ -11,25 +11,13 @@
     <title>Mercado Liebre</title>
 </head>
 <body>
-    <header class="header">
-            <img id="logo" src="/images/logo-mercado-liebre.svg">
-            <input id="busqueda" type="text" placeholder="Buscar productos, marcas">
-            <span id="label" style="color: black;"><i class='fas fa-hand-holding-usd'></i>  Comprá en cuotas y sin tarjeta de crédito</span>
-            
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Ofertas</a>
-                <a href="#">Tiendas Oficiales</a>
-                <a href="#">Vender</a>
-                <a href="#">Ayuda</a>
-                <a href="#">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a>
-                <a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
-                <a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
-            </div>
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-    </header>
+    <!--HEADER cargado desde header.html-->
+    <div w3-include-html="/header"></div>
+
+    <!-- Contenido de HOME - Inicio -->
+    <img id="banner" src="/images/img-home-banner.jpg">
     <main>
-        <img id="banner" src="/images/img-home-banner.jpg">
+        
 
         <!--SECCIÓN: Basado en tu última visita-->
         <h3 style="color:#666; text-align: center;">Basado en tu última visita</h3>
@@ -146,31 +134,15 @@
         </section>
         
     </main>
-    <footer>
-        <article>
-            <i class="fa-solid fa-credit-card icono"></i>
-            <h4 class="subtitulo">Pagá con tarjeta o en efectivo</h4>
-            <p class="descripcion">Con MercadoLiebreCash tenés cuotas sin interés con tarjetas o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </article>
-        
-        <article>
-            <i class="fa-solid fa-gift icono"></i>
-            <h4 class="subtitulo">Envío gratis desde los $ 2.500</h4>
-            <p class="descripcion">Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos.</p>
-        </article>
+    <!-- Contenido de HOME - Fin -->
 
-        <article>
-            <i class="fa-solid fa-user-shield icono"></i>
-            <h4 class="subtitulo">Seguridad de principio a fin</h4>
-            <p class="descripcion">¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estas siempre protegid@.</p>
-        </article>
-
-        <article class="copyright">
-            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-        </article>
-
-    </footer>
+    <!--FOOTER cargado desde footer.html-->
+    <div w3-include-html="/footer"></div>
+    
+    
 
 <script src="/js/nav_script.js"></script>
+<script src="/js/include.js"></script>
+<script>includeHTML();</script>
 </body>
 </html>
