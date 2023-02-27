@@ -1,10 +1,28 @@
 /*Smartphones*/
-@media (min-width: 361px) {
-
+@media (min-width: 320px) {
+  .boton-buscar {
+    position: absolute;
+    right: 30px;
+    top: 3.7vh;
+    background: none;
+    border: none;
+  }
 }
 
+
 /*Tablets*/
+@media (min-width: 768px) {
+  .boton-buscar {
+    right: 65px;
+    top: 6vh;
+  }
+}
 @media (min-width: 769px) {
+  .boton-buscar {
+    right: 270px;
+    top: 5.5vh;
+  }
+
   .seccion article {
     width: 40%;
   }
@@ -16,19 +34,6 @@
 
   #busqueda {
     width: 30vw;
-  }
-
-  .boton-buscar {
-    display: inline-block;
-    border: 1px solid grey;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: white;
-    margin-left: -15px;
-  }
-
-  .boton-buscar:active {
-    background-color: grey;
   }
 
   #logo {
@@ -56,6 +61,7 @@
   .openbtn { /*Ocultar Menu Mobile*/
     display: none;
   }
+  
 
 }
 
@@ -63,5 +69,18 @@
 @media (min-width: 1024px) {
   .seccion article {
     width: 20%;
+  }
+  .boton-buscar {
+    display: inline-block;
+    position: unset;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: -15px;
+  }
+
+  .boton-buscar:active {
+    background-color: grey;
   }
 }

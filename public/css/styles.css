@@ -18,6 +18,7 @@ p {
 
 h3 {
   font-size: 24px;
+  margin-top: 50px;
 }
 
 main {
@@ -51,7 +52,7 @@ main {
 }
 
 .boton-buscar {
-  display: none;
+  position: relative;
 }
 
 /* Estilos del logo */
@@ -62,7 +63,7 @@ main {
 
 /* Estilos Label Header */
 #mensajeHeader {
-  font-size: 0.8em;
+  font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   margin: 2vh 0px;
   text-align: center;
@@ -140,7 +141,7 @@ main {
 /* Estilo de Productos */
 .productos {
   background-color: white;
-  margin: 10px 20px 0px 20px;
+  margin: 60px 20px 0px 20px;
   padding: 15px;
   width: 100%;
   position: relative;
@@ -153,7 +154,7 @@ main {
 }
 
 .productos .precio {
-  margin-left: 30px;
+  margin-left: 20px;
   display: inline;
   font-size: 18px;
 }
@@ -163,6 +164,7 @@ main {
   display: inline;
   font-size: 16px;
   color: #39b54a;
+  white-space: nowrap;
 }
 
 .productos .nombre {
@@ -405,19 +407,6 @@ main {
 
   #busqueda {
     width: 30vw;
-  }
-
-  .boton-buscar {
-    display: inline-block;
-    border: 1px solid grey;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: white;
-    margin-left: -15px;
-  }
-
-  .boton-buscar:active {
-    background-color: grey;
   }
 
   #logo {
